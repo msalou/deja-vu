@@ -1,0 +1,11 @@
+<div class="feed" role="main">
+    <ul *ngFor="let card of cards">
+        <li>{{ card.public_id }}</li>
+        <li>{{ card.created_at }}</li>
+        <li>{{ card.context.custom.caption }}</li>
+        <li>{{ card.context.custom.alt }}</li>
+        <li>
+            <img src="https://res.cloudinary.com/msalou/image/upload/{{card.public_id}}.jpg" width="500" height="600">
+        </li>
+    </ul>
+</div>
